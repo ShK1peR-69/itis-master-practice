@@ -1,0 +1,268 @@
+body {
+    background: black;
+    color: #bdbdbd;
+    font-weight: 300;
+    height: 100vh;
+    margin: 0;
+    font-family: Helvetica neue, roboto, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border: 1pt solid red;
+    position: absolute;
+    padding: 10px 40px;
+    top: 0;
+}
+
+header h2 {
+    color: red;
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 7px;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+.to-main-href {
+    margin-top: 20px;
+}
+
+.to-main-href a:hover {
+    text-decoration: none;
+}
+
+.main-form {
+    position: absolute;
+    top: 110px;
+    width: 200px;
+}
+
+.modal-top {
+    top: 0;
+}
+
+.error-msg {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.login-btn-submit {
+    margin-top: 10px;
+}
+
+.login-btn {
+    background-color: #1e7e34;
+    border: none;
+}
+
+.login-btn:hover {
+    background-color: #1ea435;
+}
+
+.log-btn-form {
+    height: 39px;
+    margin-bottom: 16px !important;
+}
+
+#name-error, #age-error, #password-error, #email-error {
+    justify-content: flex-start;
+    margin-left: 2%;
+    color: red;
+    display: none;
+}
+
+.form-group label {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.good-reg {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    font-size: 1.7rem;
+    height: 100px;
+}
+
+.good-reg a:hover {
+    color: rgba(0, 0, 255, 0.71);
+    text-decoration: none;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.admin-container a {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.3rem;
+    margin-bottom: 2%;
+}
+
+.admin-container table {
+    width: 50%;
+}
+
+.admin-container table td, th {
+    border: 1pt solid white;
+    padding: 1% 2%;
+}
+
+.empty-list {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.admin-container .empty-list a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-container {
+    margin-left: -10%;
+    width: 120%;
+}
+
+.main {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    min-height: 200px;
+    padding: 0 30px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.user-docs-list {
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+    border: 1pt solid greenyellow;
+}
+
+.delete-doc-btn {
+    width: 20px;
+    height: 20px;
+}
+
+.delete-doc-btn img {
+    width: 15px;
+    height: 15px;
+}
+
+table {
+    width: 700px;
+    border: 1pt solid;
+}
+
+td {
+    border: 1pt solid;
+    height: 50px;
+}
+
+td a:hover {
+    text-decoration: none;
+}
+
+.users-list {
+    width: 500px;
+}
+
+.users-list li {
+    text-align: left;
+}
+
+.users-list > ol > li > a, .profile-header > a {
+    color: greenyellow;
+}
+
+.users-list > ol > li > a:hover, .profile-header > a:hover {
+    text-decoration: none;
+    color: #7acd31;
+}
+
+.files-list__empty, .file-download, .files-list {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+
+.file-download, .files-list__empty, .files-list {
+    margin-top: 30px;
+}
+
+.download-input {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.ident-file {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.view-href {
+    color: #1ea435;
+}
+
+.view-href:hover {
+    color: #1fcd37;
+}
+
+.delete-href {
+    color: #b90000;
+}
+
+.delete-href:hover {
+    color: red;
+}
+
+.view-href:hover, .delete-href:hover {
+    text-decoration: none;
+}
+
+.admin-link {
+    color: #1ea435;
+}
+
+.admin-link:hover {
+    text-decoration: none;
+    color: #00ed43;
+}
+
