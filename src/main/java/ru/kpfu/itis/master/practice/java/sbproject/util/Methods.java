@@ -54,15 +54,6 @@ public class Methods {
         }
     }
 
-    /* Хэширование пароля, добавление солей */
-    public String hashPass(String password) {
-        password = "first_sold" + password;
-        password = Arrays.toString(DigestUtils.sha256(password));
-        password += "additional_sold";
-        password = DigestUtils.md5Hex(password);
-        return password;
-    }
-
     // Создание папки для хранения файлов отдельного пользователя
     private boolean createNewFolderForUserFiles(String path) {
         File folder = new File(path);
@@ -98,5 +89,14 @@ public class Methods {
                 new File(pathToSave + "/" + filename.getOriginalFilename())));
         bos_copy.write(fileBytes);
         bos.close();
+    }
+
+    /* Хэширование пароля, добавление солей */
+    public String hashPass(String password) {
+        password = "first_sold" + password;
+        password = Arrays.toString(DigestUtils.sha256(password));
+        password += "additional_sold";
+        password = DigestUtils.md5Hex(password);
+        return password;
     }
 }
